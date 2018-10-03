@@ -14,7 +14,7 @@
     "target": "es5"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", "../mean.example.com/models/lists.js"
   ],
   "exclude": [
     "node_modules",

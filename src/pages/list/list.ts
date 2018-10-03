@@ -27,11 +27,16 @@ export class ListPage {
       });
     }
   }
-
-  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
+  removeItem(item) {
+    for (let i = 0; i < this.items.length; i++) {
+      if (this.items[i] == item) {
+        this.items.splice(i, 1);
+      }
+    }
   }
+//  itemTapped(event, item) {
+    // That's right, we're pushing to ourselves!
+//    this.navCtrl.push(ListPage, {
+//      item: item
+//    });
 }
