@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ListEditPage } from '../pages/list-edit/list-edit';
+import { ListCreatePage } from '../pages/list-create/list-create';
 import { UsersPage } from '../pages/users/users';
 import { UserPage } from '../pages/user/user';
 import { UserCreatePage } from '../pages/user-create/user-create';
@@ -26,7 +27,9 @@ import { ListsProvider } from '../providers/lists/lists';
     UserCreatePage,
     UserEditPage,
     ListPage,
-    ListEditPage
+    ListEditPage,
+    ListCreatePage
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { ListsProvider } from '../providers/lists/lists';
     UserCreatePage,
     UserEditPage,
     ListPage,
-    ListEditPage
+    ListEditPage,
+    ListCreatePage
   ],
   providers: [
     StatusBar,

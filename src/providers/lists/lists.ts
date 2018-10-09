@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { Component } from '@angular/core';
+/*import { Component } from '@angular/core';
+
 import {
   IonicPage,
   NavController,
   LoadingController,
-  NavParams } from 'ionic-angular';
+  NavParams } from 'ionic-angular'; */
 
 //import { ListsProvider } from '../../providers/lists/lists';
 import { List } from '../../models/list/list'
