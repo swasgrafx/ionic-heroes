@@ -38,8 +38,8 @@ export class ListsProvider {
     return this.http.get<List[]>(this.url);
   }
 
-  getList(slug:string): Observable<List>{
-    return this.http.get<List>(`${this.url}/${slug}`);
+  getList(id:string): Observable<List>{
+    return this.http.get<List>(`${this.url}/${id}`);
   }
 
   createList(list:List): Observable<List>{

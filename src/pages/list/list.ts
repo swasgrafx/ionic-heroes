@@ -55,9 +55,20 @@ export class ListPage {
     );
   }
   toListEdit(id:string): void{
+//    console.log(id);
     this.navCtrl.push(ListEditPage, {id: id});
   }
-
+  toListDelete(id:string): void{
+//    console.log(this.lists);
+//    if(confirm('Are you sure you want to delete'+ this.lists+[id]))
+      {
+        this.listsProvider.deleteList(id).subscribe(
+        (response:any)=>{
+      this.navCtrl.push(ListPage);
+  }
+      );
+    }
+}
   toListCreate(id:string): void{
     this.navCtrl.push(ListCreatePage);
   }

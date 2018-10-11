@@ -35,7 +35,7 @@ export class ListCreatePage {
   createList(): void{
     this.listsProvider.createList(this.list.value).subscribe(
       (response:any)=>{
-        //console.log(response.list.id)
+        console.log(response);
         this.navCtrl.push(ListPage, {id: response.list.id});
       }
     );
