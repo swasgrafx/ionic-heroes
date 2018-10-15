@@ -17,6 +17,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { UsersProvider } from '../providers/users/users';
 import { ListsProvider } from '../providers/lists/lists';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ListsProvider } from '../providers/lists/lists';
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UsersProvider,
     ListsProvider

@@ -14,6 +14,12 @@
 
 
   <ion-content padding>
+<!--    <ion-card-content>
+      <button (click)="takePicture()">Take a Picture</button>
+       Latest Picture:
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-card-content>
+  -->
     <form [formGroup]="list" (ngSubmit)="createList()">
       <ion-item>
         <ion-label floating>Title</ion-label>
